@@ -1,3 +1,15 @@
 /*
   Colour Palette
+  Dark Pink - #FE2E2E rgb(254,46,46)
 */
+
+
+.search {
+	background-color: #FE2E2E;
+	padding: 6px 15px 6px 30px;
+	margin: 3px; 
+}
+
+button {
+	background-color:#FFF;
+}
