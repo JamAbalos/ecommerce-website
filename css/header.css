@@ -90,3 +90,10 @@ header {
 	}
 
 }
+
+@media only screen and (min-width: 50em) {
+	h1{
+		width: 30%;
+	}
+
+}
