@@ -1,3 +1,45 @@
 /*
   Colour Palette
+  - Purple: #610B38 - rgb(121,50,132)
+  - Dark Purple: #3B0B24 - rgb(59,11,36)
 */
+header {
+	background: #FFF;
+	color: #000;
+}
+
+.logo {
+	width: 50%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.nav a, 
+.nav a:link,
+.nav a:visited {
+	display: block;
+	padding: 1rem;
+	text-align:center;
+	color: #fff;
+	text-decoration: none;
+	background-color: #610B38;
+	border-top: 1px solid #fff;
+	/* border-width || border-style || border-color */
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active {
+	background-color: #3B0B24;
+}
+
+	/* Toggle Nav*/
+
+.nav-top {
+	display: none;
+}
+
+.nav-top {
+	display: block;
+}
