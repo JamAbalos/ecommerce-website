@@ -43,3 +43,50 @@ header {
 .nav-top {
 	display: block;
 }
+
+@media only screen and (min-width: 30em) {
+	.logo {
+	width: 4rem;
+	float: left;
+	margin: 1rem;
+	}
+
+	header {
+	background: #610B38;
+	color: #FFF;
+	overflow: auto;
+	}
+	
+	.nav{
+		background-color: #610B38;
+		text-align: center;
+	}
+	
+	.nav li{
+		display: inline-block;
+		float: none;
+		margin: .5rem;
+		width:auto;
+		background-color: #610B38;
+	}
+	
+	.nav a, 
+	.nav a:link,
+	.nav a:visited{
+		border-top: 0;
+	}
+	
+	.nav-top{
+		float: right;
+		margin-right: 5%;
+		margin-top: .7rem;
+	}
+	
+	h1{
+		color: #FFF;
+		float: left;
+		margin-top: 1.2rem;
+		width: 50%;
+	}
+
+}
