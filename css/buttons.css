@@ -19,9 +19,23 @@
 	font-weight: bold;
 }
 
+.btn:hover,
+.btn:focus,
+.btn:active {
+	background-color: #B4045F;
+	background-image: linear-gradient(to bottom, #610B38, #B4045F);
+}
+
 .btn-alt,
 .btn-alt:link,
 .btn-alt:visited {
 	background-color: #D8F781;
 	background-image: linear-gradient(to bottom, #D8F781, #B6d560);
+}
+
+.btn-alt:hover,
+.btn-alt:focus,
+.btn-alt:active {
+	background-color: #D8F781;
+	background-image: linear-gradient(to bottom, #B6d560, #D8F781);
 }
