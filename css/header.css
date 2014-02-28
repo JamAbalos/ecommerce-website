@@ -44,7 +44,7 @@ header {
 	display: block;
 }
 
-@media only screen and (min-width: 30em) {
+@media only screen and (min-width: 33em) {
 	.logo {
 	width: 4rem;
 	float: left;
@@ -89,11 +89,19 @@ header {
 		width: 50%;
 	}
 
+	input {
+		margin-top: 1.2rem;
+	}
+
 }
 
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 58em) {
 	h1{
 		width: 30%;
+	}
+
+	input {
+		margin-top: 1.2rem;
 	}
 
 }
