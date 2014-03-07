@@ -1,0 +1,41 @@
+/*
+  Colour Palette
+  - Purple: #610B38 - rgb(121,50,132)
+  - Dark Purple: #3B0B24 - rgb()
+  - Heading green: #5d8432 - rgb(93,132,50)
+*/
+
+.btn,
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	padding: 0.75em 1em;
+	background-color: #B4045F;
+	background-image: linear-gradient(to bottom, #B4045F, #610B38);
+	border-radius: 6px;
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+	border: 0;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+	background-color: #B4045F;
+	background-image: linear-gradient(to bottom, #610B38, #B4045F);
+}
+
+.btn-alt,
+.btn-alt:link,
+.btn-alt:visited {
+	background-color: #D8F781;
+	background-image: linear-gradient(to bottom, #D8F781, #B6d560);
+}
+
+.btn-alt:hover,
+.btn-alt:focus,
+.btn-alt:active {
+	background-color: #D8F781;
+	background-image: linear-gradient(to bottom, #B6d560, #D8F781);
+}

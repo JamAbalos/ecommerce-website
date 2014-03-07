@@ -1,0 +1,33 @@
+/*
+  Colour Palette
+  - Light Pink: #F78181 - rgb(247,129,129)
+  - Darkest pink: #19070B - rgb(25,7,11)
+*/
+
+.img-flex {
+	width: 100%;
+	display: block;
+	margin:0;
+}
+
+.sale {
+	margin:0;
+	color: #FFF;
+}
+
+.promo-small {
+	background-color: #F78181;
+	border-radius: 10px;
+	padding: 1em;
+}
+
+.promo-large {
+	background-color: #19070B;
+	border-radius: 10px;
+	padding: 1em;
+
+}
+
+.btn-l {
+	float: right;
+}
