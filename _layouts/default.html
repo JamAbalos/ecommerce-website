@@ -2,7 +2,7 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Dinos R Us</title>
+  <title>{% if page.title %}{{page.title}} • {% endif %} Murasaki Wines {% if page.titleAfter %} • {{page.titleAfter}}{% endif %}</title>
   <meta name="handheldfriendly" content="true">
   <meta name="mobileoptimized" content="240">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -28,9 +28,9 @@
         <h1>Murasaki Wines</h1>
     <nav class="nav nav-top">
       <ul>
-        <li><a href="{{site.baseurl}}">Home</a></li>
-        <li><a href="{{site.baseurl}}about/">About</a></li>
-        <li><a href="{{site.baseurl}}thank-you/">Thank You</a></li>
+        <li><a href="{{site.baseurl}}" class="{% if page.url == '/index.html'%}current{% endif %}">Home</a></li>
+        <li><a href="{{site.baseurl}}about/" class="{% if page.url == '/about.html'%}current{% endif %}">About</a></li>
+        <li><a href="{{site.baseurl}}thank-you/" class="{% if page.url == '/thank-you.html'%}current{% endif %}">Thank You</a></li>
       </ul>
     </nav>
     <input type="search" name="#">
