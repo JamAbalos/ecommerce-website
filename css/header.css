@@ -44,6 +44,16 @@ header {
 	display: block;
 }
 
+.banner {
+	padding: 1em;
+	background: #3B0B24 url("../img/banner.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.bannerAbout {
+	background-image: url("../img/banner2.jpg");
+}
+
 @media only screen and (min-width: 33em) {
 	.logo {
 	width: 4rem;
