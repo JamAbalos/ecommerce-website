@@ -3,8 +3,9 @@
 		{% if wines.type == 'include.type' %}
 			<li>
 				<a href="{{site.baseurl}}{{wines.url}}">
-					<img src="{{site.baseurl}}images/{{wines.image}}" alt="">
+					<img src="{{site.baseurl}}images/{{wines.image}}" alt="Photo of {{wines.title}}">
 					{{wines.title}}
+					<p>{{wines.meta}}</p>
 				</a>
 			</li>
 		{% endif %}
