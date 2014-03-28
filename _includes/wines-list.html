@@ -1,0 +1,12 @@
+<ul>
+	{% for wines in site.pages %}
+		{% if wines.type == 'include.type' %}
+			<li>
+				<a href="{{site.baseurl}}{{wines.url}}">
+					<img src="{{site.baseurl}}images/{{wines.image}}" alt="">
+					{{wines.title}}
+				</a>
+			</li>
+		{% endif %}
+	{% endfor %}
+</ul>
