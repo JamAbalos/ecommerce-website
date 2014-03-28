@@ -44,10 +44,15 @@ header {
 	display: block;
 }
 
+.current {
+background-color: #3B0B24;
+}
+
 .banner {
-	padding: 1em;
 	background: #3B0B24 url("../img/banner.jpg") no-repeat center center;
+	padding: 5em 1em 1em;
 	background-size: cover;
+	text-align: center;
 }
 
 .bannerAbout {
