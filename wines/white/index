@@ -1,0 +1,6 @@
+---
+layout: default
+---
+
+<h1>Red Wine</h1>
+	{% include wines-list.html type='white'%}
