@@ -8,6 +8,7 @@
 	width: 100%;
 	display: block;
 	margin:0;
+	padding: 15px;
 }
 
 .sale {
@@ -19,12 +20,14 @@
 	background-color: #F78181;
 	border-radius: 10px;
 	padding: 1em;
+	margin: 5px;
 }
 
 .promo-large {
 	background-color: #19070B;
 	border-radius: 10px;
 	padding: 1em;
+	margin: 5px;
 
 }
 
