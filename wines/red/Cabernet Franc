@@ -1,6 +1,6 @@
 ---
 layout: wines
-category: red
+type: red
 title: Cabernet Franc
 image: red/cabernetfranc.jpg
 meta: Add info here
