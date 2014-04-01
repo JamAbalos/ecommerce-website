@@ -59,7 +59,7 @@ header {
 	background-image: url("./img/banner2.jpg");
 }
 
-@media only screen and (min-width: 33em) {
+@media only screen and (min-width: 38em) {
 	.logo {
 		width: 200px;
 		display: block;
@@ -108,13 +108,6 @@ header {
 	.current{
 		background-color: #3B0B24;
 }
-	
-	h1{
-		color: #FFF;
-		float: left;
-		margin-top: 1.2rem;
-		width: 50%;
-	}
 
 	input {
 		margin-top: 1.2rem;
