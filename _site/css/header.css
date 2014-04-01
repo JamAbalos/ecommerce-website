@@ -34,68 +34,80 @@ header {
 	background-color: #3B0B24;
 }
 
-	/* Toggle Nav*/
+.search {
+    border:none;}
 
-.nav-top {
-	display: none;
-}
-
-.nav-top {
-	display: block;
+.search input {
+  	border-radius: 7px;
+  	border: 1px solid #CCCCCC;
+  	padding: 8px;
+  	width: 285px;
+  	margin:5px;
 }
 
 .current {
-background-color: #3B0B24;
+	background-color: #3B0B24;
 }
 
 .banner {
-	background: #610B38 url("../img/banner.jpg") no-repeat center center;
-	padding: 5em 1em 1em;
+	background: #610B38 url("./img/banner.jpg") no-repeat center center;
 	background-size: cover;
 	text-align: center;
 }
 
 .bannerAbout {
-	background-image: url("../img/banner2.jpg");
+	background-image: url("./img/banner2.jpg");
 }
 
 @media only screen and (min-width: 33em) {
 	.logo {
-	width: 4rem;
-	float: left;
-	margin: 1rem;
-	}
-
-	header {
-	background: #610B38;
-	color: #FFF;
-	overflow: auto;
+		width: 200px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
 	}
 	
 	.nav{
-		background-color: #610B38;
-		text-align: center;
+	    width:100%;
+	    height:45px;
+	    background:#fff; 
+	    box-shadow:0 0 8px #666;
+	}
+
+	.nav ul{
+		list-style: none;
 	}
 	
-	.nav li{
-		display: inline-block;
-		float: none;
-		margin: .5rem;
-		width:auto;
-		background-color: #610B38;
+	.nav ul li{
+		float: left;
+		margin: 13px 22px;
+	}
+
+	.nav div{
+		float: right;
 	}
 	
 	.nav a, 
 	.nav a:link,
 	.nav a:visited{
-		border-top: 0;
+		display: block;
+		padding: 0;
+		text-align:center;
+		color: #000;
+		text-decoration: none;
+		background-color: #FFF;
+		border: none;
 	}
-	
-	.nav-top{
-		float: right;
-		margin-right: 5%;
-		margin-top: .7rem;
+
+	.nav a:hover,
+	.nav a:focus,
+	.nav a:active {
+		color: #3B0B24;
 	}
+
+	.current{
+		background-color: #3B0B24;
+}
 	
 	h1{
 		color: #FFF;
@@ -108,15 +120,17 @@ background-color: #3B0B24;
 		margin-top: 1.2rem;
 	}
 
-}
+	.search {
+    	float:right;
+    	border:none;}
 
-@media only screen and (min-width: 58em) {
-	h1{
-		width: 30%;
-	}
-
-	input {
-		margin-top: 1.2rem;
-	}
+  	.search input {
+  		border-radius: 7px;
+  		border: 1px solid #CCCCCC;
+  		float: left;
+  		padding: 8px;
+  		width: 200px;
+  		margin:5px;
+  }
 
 }
