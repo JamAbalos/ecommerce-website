@@ -1,4 +1,39 @@
 ---
 layout: default
-title: Cart
+title: Your Shopping Cart
+desc:  Great tasting wine for any and every occasion.
+subtotal: $50.00          
+shipping: $10.00
+total: TOTAL $60.00
 ---
+
+<h1> YOUR CART</h1>
+
+<div class="media-img">
+        <ul>
+            {% for shop in site.pages %}
+                {% if shop.type == "red" %}
+                    <li class="list-group list-group-item tera">
+                        <a href="{{site.baseurl}}{{shop.url}}">
+                            <img class="img img-flex" src="{{site.baseurl}}images/{{shop.image}}" alt=""=>
+                            {{shop.title}}
+                        </a>
+                    </li>    
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="media-body">
+        <p>{{page.desc}}</p>
+    </div>
+            
+    <ul class="list-group micro">
+        <li class="list-group-item list-group-item-inline">
+            <p>{{page.price}}</p>
+            <p>{{page.subtotal}}</p>
+            <p>{{page.shipping}}</p>
+            <p>{{page.total}}</p>
+        </li>
+    <a class="btn media-img-reversed micro" href="{{site.baseurl}}thank-you/">BUY NOW</a>
+</div> 
