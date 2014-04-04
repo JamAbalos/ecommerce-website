@@ -15,6 +15,10 @@ header {
 	margin-left: auto;
 }
 
+.nav {
+	overflow: hidden;
+}
+
 .nav a, 
 .nav a:link,
 .nav a:visited {
@@ -45,18 +49,18 @@ header {
   	margin:5px;
 }
 
-.current {
+.nav .current, .nav .current:link, .nav .current:visited {
 	background-color: #3B0B24;
 }
 
 .banner {
-	background: #610B38 url("./img/banner.jpg") no-repeat center center;
+	background: #610B38 url("../images/banner.jpg") no-repeat center center;
 	background-size: cover;
 	text-align: center;
 }
 
-.bannerAbout {
-	background-image: url("./img/banner2.jpg");
+.aboutBanner {
+	background-image: url("../images/banner2.jpg");
 }
 
 @media only screen and (min-width: 38em) {
