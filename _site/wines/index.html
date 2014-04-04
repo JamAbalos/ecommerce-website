@@ -33,9 +33,14 @@
         <li><a href="/wines/" class="current">Wines</a></li>
         <li><a href="/about/" class="">About</a></li>
         <li><a href="/thank-you/" class="">Thank You</a></li>
+        <li><a href="/cart/" class="">Cart</a></li>
       </ul>
       <div class="search">
-       <input type="text" id="s" name="s" onclick="this.value='';" value="Site Search" />
+        <form action="/search/" method="get">
+          <fieldset class="clearfix">
+            <input type="text" id="s" name="s" onclick="this.value='';" value="Site Search" />
+          </fieldset>
+        </form>
       </div>
     </nav>
   </header>
@@ -46,6 +51,10 @@
 
 <h2>Red Wine</h2>
 	<ul>
+	
+		
+	
+		
 	
 		
 	
@@ -104,8 +113,12 @@
 		
 	
 		
+	
+		
+	
+		
 			<li>
-				<a href="/wines/white/Chardonnay">
+				<a href="/wines/white/chardonnay/">
 					<img src="/images/white/chardonnay.jpg" alt="Photo of Chardonnay">
 					Chardonnay
 					<p>Add info here</p>
@@ -115,6 +128,14 @@
 	
 		
 	
+		
+			<li>
+				<a href="/wines/white/sauvignonblanc/">
+					<img src="/images/white/sauvignonblanc.jpg" alt="Photo of Sauvignon Blanc">
+					Sauvignon Blanc
+					<p>Add info here</p>
+				</a>
+			</li>
 		
 	
 </ul>
