@@ -2,3 +2,44 @@
 layout: default
 title: Search Results
 ---
+
+<h1 class="gutter">{{page.title}}</h1>
+
+<div class="grid">
+
+    <div class="gutter unit unit-s-1 unit-m-1-2 unit-l-2-3">
+        <p>What you searched for has been found.</p>
+    </div>
+</div>
+
+<div class="grid">
+    <div class="unit unit-s-1 unit-m-1-2 unit-l-1-2">
+        <ul>
+            {% for shop in site.pages %}
+                {% if shop.type == "red" %}
+                    <li class="list-group list-group-item tera">
+                        <a href="{{site.baseurl}}{{shop.url}}">
+                            <img class="img img-flex" src="{{site.baseurl}}images/{{shop.image}}" alt=""=>
+                            {{shop.title}}
+                        </a>
+                    </li>    
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="unit unit-s-1 unit-m-1-2 unit-l-2-2">
+        <ul>
+            {% for shop in site.pages %}
+                {% if shop.type == "white" %}
+                    <li class="list-group list-group-item tera">
+                         <a href="{{site.baseurl}}{{shop.url}}">
+                            <img class="img img-flex" src="{{site.baseurl}}images/{{shop.image}}" alt=""=>
+                            {{shop.title}}
+                        </a>
+                    </li>    
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>
