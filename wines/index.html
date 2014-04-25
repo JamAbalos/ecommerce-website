@@ -6,8 +6,36 @@ title: Wines!
 
 {% include wines-nav.html %}
 
-<h2>Red Wine</h2>
-	{% include wines-list.html type='red'%}
+<h1>Wines!</h1>
 
-<h2>White Wine</h2>
-	{% include wines-list.html type='white'%}
+<div class="grid">
+    <div class="unit unit-s-1 unit-m-1-2 unit-l-1-2">
+        <ul>
+            {% for shop in site.pages %}
+                {% if shop.type == "red" %}
+                    <li class="list-group list-group-item tera promo-small">
+                        <a href="{{site.baseurl}}{{wines.url | replace_first: "/",""}}">
+                            <img class="img img-flex" src="{{site.baseurl}}images/{{shop.image}}" alt="Photo of {{wines.title}}">
+                            {{shop.title}}
+                        </a>
+                    </li>    
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="unit unit-s-1 unit-m-1-2 unit-l-2-2">
+        <ul>
+            {% for shop in site.pages %}
+                {% if shop.type == "white" %}
+                    <li class="list-group list-group-item tera promo-small">
+                        <a href="{{site.baseurl}}{{wines.url | replace_first: "/",""}}">
+                            <img class="img img-flex" src="{{site.baseurl}}images/{{shop.image}}" alt="Photo of {{wines.title}}">
+                            {{shop.title}}
+                        </a>
+                    </li>    
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>
