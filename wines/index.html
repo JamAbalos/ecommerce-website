@@ -11,12 +11,12 @@ title: Wines!
 <div class="grid">
     <div class="unit unit-s-1 unit-m-1-2 unit-l-1-2">
         <ul>
-            {% for shop in site.pages %}
-                {% if shop.type == "red" %}
+            {% for wines in site.pages %}
+                {% if wines.type == "red" %}
                     <li class="list-group list-group-item tera promo-small">
                         <a href="{{site.baseurl}}{{wines.url | replace_first: "/",""}}">
-                            <img class="img img-flex" src="{{site.baseurl}}images/{{shop.image}}" alt="Photo of {{wines.title}}">
-                            {{shop.title}}
+                            <img class="img img-flex" src="{{site.baseurl}}images/{{wines.image}}" alt="Photo of {{wines.title}}">
+                            {{wines.title}}
                         </a>
                     </li>    
                 {% endif %}
@@ -26,12 +26,12 @@ title: Wines!
 
     <div class="unit unit-s-1 unit-m-1-2 unit-l-2-2">
         <ul>
-            {% for shop in site.pages %}
-                {% if shop.type == "white" %}
+            {% for wines in site.pages %}
+                {% if wines.type == "white" %}
                     <li class="list-group list-group-item tera promo-small">
                         <a href="{{site.baseurl}}{{wines.url | replace_first: "/",""}}">
-                            <img class="img img-flex" src="{{site.baseurl}}images/{{shop.image}}" alt="Photo of {{wines.title}}">
-                            {{shop.title}}
+                            <img class="img img-flex" src="{{site.baseurl}}images/{{wines.image}}" alt="Photo of {{wines.title}}">
+                            {{wines.title}}
                         </a>
                     </li>    
                 {% endif %}
