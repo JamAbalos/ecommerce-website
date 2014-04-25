@@ -7,27 +7,15 @@
   <meta name="mobileoptimized" content="240">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="http://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
-  <link href="/css/typography.css" rel="stylesheet">
-  <link href="/css/common.css" rel="stylesheet">
-  <link href="/css/embed.css" rel="stylesheet">
-  <link href="/css/list-group.css" rel="stylesheet">
-  <link href="/css/buttons.css" rel="stylesheet">
-  <link href="/css/icons.css" rel="stylesheet">
-  <link href="/css/media-object.css" rel="stylesheet">
-  <link href="/css/grid.css" rel="stylesheet">
-  <link href="/css/header.css" rel="stylesheet">
-  <link href="/css/footer.css" rel="stylesheet">
-  <link href="/css/product.css" rel="stylesheet">
-  <link href="/css/product-list-item.css" rel="stylesheet">
-  <link href="/css/promos.css" rel="stylesheet">
+  <link href="/css/main.css" rel="stylesheet">
   <meta name="description" content="">
 </head>
 
 <body>
 
-  <header class="banner ">
-    <a href="#"><img src="/images/logo.svg" alt="Company Name" class="logo"></a>
-    <nav class="nav">
+  <header class="banner " role="banner">
+    <a href="/" class="block-link"><img src="/images/logo.svg" alt="Company Name" class="logo"></a>
+    <nav class="nav" role="navigation">
       <ul>
         <li><a href="/" class="">Home</a></li>
         <li><a href="/wines/" class="current">Wines</a></li>
@@ -36,10 +24,10 @@
         <li><a href="/cart/" class="">Cart</a></li>
       </ul>
       <div class="search">
-        <form action="/search/" method="get">
-          <fieldset class="clearfix">
-            <input type="text" id="s" name="s" onclick="this.value='';" value="Site Search" />
-          </fieldset>
+        <form action="/search/" method="get" role="search">
+            <fieldset class="clearfix">
+              <input type="text" id="s" name="s" onclick="this.value='';" value="Site Search" />
+            </fieldset>
         </form>
       </div>
     </nav>
@@ -51,6 +39,8 @@
 
 <h2>Red Wine</h2>
 	<ul>
+	
+		
 	
 		
 	
@@ -117,6 +107,8 @@
 		
 	
 		
+	
+		
 			<li>
 				<a href="/wines/white/chardonnay/">
 					<img src="/images/white/chardonnay.jpg" alt="Photo of Chardonnay">
@@ -151,7 +143,7 @@
       <li><a href="#"><img src="../images/icons/i-pinterest.svg" alt="Pinterest" class="icons"></a></li>
     </ul>
   </nav>
-  <p class="copyright">Copyright © 2014 Murasaki Wines</p>
+  <p class="copyright" role="contentinfo">Copyright © 2014 Murasaki Wines</p>
 </footer>
 
 
