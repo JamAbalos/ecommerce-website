@@ -17,10 +17,11 @@
 }
 
 .promo-small {
-	background-color: #F78181;
+	background-color: #FFF;
 	border-radius: 10px;
 	padding: 1em;
 	margin: 5px;
+	box-shadow: 0 0 8px #666;
 }
 
 .promo-large {
