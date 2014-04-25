@@ -18,8 +18,8 @@ title: Search Results
             <ul>
                 {% for shop in site.pages %}
                     {% if shop.type == "red" %}
-                        <li class="list-group list-group-item tera">
-                            <a href="{{site.baseurl}}{{shop.url}}">
+                        <li class="list-group list-group-item tera promo-small">
+                            <a href="{{site.baseurl}}{{wines.url | replace_first: "/",""}}">
                                 <img class="img img-flex" src="{{site.baseurl}}images/{{shop.image}}" alt=""=>
                                 {{shop.title}}
                             </a>
@@ -33,8 +33,8 @@ title: Search Results
             <ul>
                 {% for shop in site.pages %}
                     {% if shop.type == "white" %}
-                        <li class="list-group list-group-item tera">
-                             <a href="{{site.baseurl}}{{shop.url}}">
+                        <li class="list-group list-group-item tera promo-small">
+                             <a href="{{site.baseurl}}{{wines.url | replace_first: "/",""}}">
                                 <img class="img img-flex" src="{{site.baseurl}}images/{{shop.image}}" alt=""=>
                                 {{shop.title}}
                             </a>
