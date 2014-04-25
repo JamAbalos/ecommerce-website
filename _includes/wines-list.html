@@ -1,13 +1,16 @@
-<ul>
-	{% for wines in site.pages %}
-		{% if wines.type == include.type %}
-			<li>
-				<a href="{{site.baseurl}}{{wines.url | replace_first: "/",""}}">
-					<img src="{{site.baseurl}}images/{{wines.image}}" alt="Photo of {{wines.title}}">
-					{{wines.title}}
-					<p>{{wines.meta}}</p>
-				</a>
-			</li>
-		{% endif %}
-	{% endfor %}
-</ul>
+<div class="grid">
+    <div class="unit unit-s-1 unit-m-1-2 unit-l-1-3">
+    	<ul>
+			{% for wines in site.pages %}
+				{% if wines.type == include.type %}
+					<li class="list-group list-group-item promo-small">
+						<a href="{{site.baseurl}}{{wines.url | replace_first: "/",""}}">
+							<img class="img img-flex" src="{{site.baseurl}}images/{{wines.image}}" alt="Photo of {{wines.title}}">
+							{{wines.title}}
+						</a>
+					</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</div>
+</div>
