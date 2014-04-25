@@ -2,25 +2,16 @@
 layout: default
 title: Your Shopping Cart
 desc:  Great tasting wine for any and every occasion.
-subtotal: $50.00          
+subtotal: $25.00          
 shipping: $10.00
-total: TOTAL $60.00
+total: TOTAL $35.00
 ---
 <main role="main">
     <h1> YOUR CART</h1>
 
     <div class="media-img">
             <ul>
-                {% for shop in site.pages %}
-                    {% if shop.type == "red" %}
-                        <li class="list-group list-group-item tera">
-                            <a href="{{site.baseurl}}{{shop.url}}">
-                                <img class="img img-flex" src="{{site.baseurl}}images/{{shop.image}}" alt=""=>
-                                {{shop.title}}
-                            </a>
-                        </li>    
-                    {% endif %}
-                {% endfor %}
+                <img src="{{site.baseurl}}images/merlot.jpg" alt="Photo of Merlot">
             </ul>
         </div>
         
